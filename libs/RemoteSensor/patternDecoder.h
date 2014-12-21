@@ -47,7 +47,7 @@
 
 #define prefixLen 3
 
-//#define DEBUGDETECT 1
+#define DEBUGDETECT 1
 //#define DEBUGDETECT 255  // Very verbose output
 //#define DEBUGDECODE 1
 

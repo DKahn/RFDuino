@@ -410,9 +410,10 @@ FHEM Schnittstelle:
 		- Bit 6,7 battery status (00 - bad, 01 - change, 10 - ok, 11 - optimal)
     DD1 - LowByte
     DD2 - HighByte
+    CC  - CRC8 Byte
 */
 	//checkEV1527type(int clockTst, byte syncFact, byte lowFact, byte highFact, byte Length)
-	bool valid = checkEV1527type(500, 18, 1, 2, 32); //14 kommt hier nicht durch =>12
+	bool valid = checkEV1527type(500, 18, 1, 2, 40); //14 kommt hier nicht durch =>12
 	twoStateMessageBytes();
 	if (valid) {//ok, it's AS
 		Serial.print("AS");
